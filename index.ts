@@ -1,29 +1,34 @@
 class BoardMember {
-    constructor(name, homeState, training) {
+    public name: string;
+    public homeState: string;
+    public training: string;
+
+    constructor(name: string, homeState: string, training: string) {
         this.name = name;
         this.homeState = homeState;
         this.training = training;
     }
-    veto() {
+
+    public veto(): string {
         return "No, I must disagree";
     }
-    approve() {
+    public approve(): string {
         return "You can do that!";
     }
-    doCharity() {
+    public doCharity(): string {
         return "I like to help people.";
     }
-    releasePressStatement() {
+    public releasePressStatement(): string {
         return "You will see great things from Scuber.";
     }
-    sayHi() {
+    public sayHi(): string {
         return `Hi, my name is ${this.name}. I am from ${this
             .homeState}, and I was trained in ${this.training}.`;
     }
 }
+
 class Ceo extends BoardMember {
-    hireEmployee() {
+    public hireEmployee(): string {
         return "Welcome aboard!";
     }
 }
-//# sourceMappingURL=index.js.map
