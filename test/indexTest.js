@@ -67,23 +67,5 @@ describe('Ceo class', function() {
     polishedBoardMember = new BoardMember("Mr. Polished", "New York", "law")
   })
 
-  describe('Ceo class', function() {
-    it('can create a ceo with a name, home state, and training', function() {
-      expect(ceo).to.be.an.instanceof(Ceo)
-      expect(ceo.name).to.equal("Mr. Ceo")
-      expect(ceo.homeState).to.equal("South Carolina")
-      expect(ceo.training).to.equal("business")
-    })
-
-    it('inherits the sayHello method from the BoardMember class', function() {
-      expect(ceo).to.be.an.instanceof(Ceo)
-      expect(ceo.sayHello).to.equal(polishedBoardMember.sayHello)
-    })
-
-    it('adds a method hireEmployee that is not available on the board member', function() {
-      expect(ceo).to.be.an.instanceof(Ceo)
-      expect(ceo.hireEmployee()).to.equal("Welcome aboard!")
-      expect(polishedBoardMember.hireEmployee).to.equal(undefined)
-    })
-  })
+  
 })
