@@ -35,7 +35,12 @@ class BoardMember {
   }
 }
 
-
 // build an ES2015 Ceo class with the following properties: name, training, and homeState. Use inheritance to accomplish this. A Ceo should have all of the methods that a boardMember has.
 // Add a new method giving the Ceo the ability to hire new employees. This functionality should not be available to a board member. So the Ceo would have one new method:
 // hireEmployee — returns Welcome aboard!
+
+class Ceo extends BoardMember {
+  hireEmployee() {
+    return `Welcome aboard!`;
+  }
+}
