@@ -77,7 +77,6 @@ describe('Ceo class', function() {
       expect(ceo).to.be.an.instanceof(Ceo)
       expect(ceo.sayHello).to.equal(polishedBoardMember.sayHello)
     })
-
     it('adds a method hireEmployee that is not available on the board member', function() {
       expect(ceo).to.be.an.instanceof(Ceo)
       expect(ceo.hireEmployee()).to.equal("Welcome aboard!")
